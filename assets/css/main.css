@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url('/fonts/MonaSansVF.woff2');
+}
+
+body {
+    color: #222;
+    font-family: "Mona Sans", sans-serif;
+    line-height: 1.5;
+    margin: 1rem;
+    max-width: 768px;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}
+
+@layer base {
+    h1 { @apply text-2xl font-bold }
+    h2 { @apply text-xl }
+}
+    

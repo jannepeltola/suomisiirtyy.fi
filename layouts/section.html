@@ -1,0 +1,18 @@
+{{define "main" }}
+    {{ .Content }}
+
+    {{ range .Pages }}
+	<section class="my-5 p-5 rounded-sm ring-2 ring-slate-300">
+	    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+	    {{ .Summary }}
+	    {{ with .GetTerms "tags" }}
+		<ul class="flex gap-5 mt-5">
+		    {{ range . }}
+			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+		    {{ end }}
+		</ul>
+	    {{ end }}
+	</section>
+    {{ end }}
+{{ end }}
+
