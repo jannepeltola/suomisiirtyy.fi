@@ -1,0 +1,30 @@
+media:
+  input: static/images
+  output: /images
+content:
+  - name: etusivu
+    label: Etusivu
+    path: content/etusivu
+    type: collection
+    fields:
+      - name: title
+        label: Otsikko
+        type: text
+        required: true
+      - name: icon
+        label: Ikoni
+        type: text
+        required: true
+  - name: vaihtoehdot
+    label: Vaihtoehdot
+    path: content/vaihtoehdot
+    type: collection
+    fields:
+      - name: title
+        label: Nimi
+        type: text
+        required: true
+      - name: link
+        label: Linkki
+        type: text
+        required: true
