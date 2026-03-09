@@ -7,6 +7,8 @@ content:
     path: content/etusivu
     type: collection
     format: toml-frontmatter
+    exclude:
+      - _index.md
     fields:
       - name: title
         label: Otsikko
@@ -25,6 +27,8 @@ content:
     path: content/vaihtoehdot
     type: collection
     format: toml-frontmatter
+    exclude:
+      - _index.md
     fields:
       - name: title
         label: Nimi
