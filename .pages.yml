@@ -28,3 +28,8 @@ content:
         label: Linkki
         type: text
         required: true
+      - name: tags
+        label: Tagit
+        type: string
+        list:
+          collapsible: false
