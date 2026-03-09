@@ -6,9 +6,14 @@ content:
     label: Etusivu
     path: content/etusivu
     type: collection
+    format: toml-frontmatter
     fields:
       - name: title
         label: Otsikko
+        type: text
+        required: true
+      - name: body
+        label: Leipäteksti
         type: text
         required: true
       - name: icon
@@ -19,9 +24,14 @@ content:
     label: Vaihtoehdot
     path: content/vaihtoehdot
     type: collection
+    format: toml-frontmatter
     fields:
       - name: title
         label: Nimi
+        type: text
+        required: true
+      - name: body
+        label: Leipäteksti
         type: text
         required: true
       - name: link
