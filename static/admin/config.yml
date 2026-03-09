@@ -2,8 +2,11 @@ backend:
   name: github
   repo: jannepeltola/suomisiirtyy.fi
   branch: main
+  site_domain: suomisiirtyy.fi
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+site_url: https://suomisiirtyy.fi
+display_url: https://suomisiirtyy.fi
 collections:
   - name: "uutinen" # Used in routes, e.g., /admin/collections/blog
     label: "Uutiset" # Used in the UI
