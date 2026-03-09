@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: jannepeltola/suomisiirtyy.fi
+  branch: main
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 collections:
