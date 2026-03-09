@@ -6,7 +6,7 @@ public_folder: "/images/uploads"
 collections:
   - name: "uutinen" # Used in routes, e.g., /admin/collections/blog
     label: "Uutiset" # Used in the UI
-    folder: "_posts/uutinen" # The path to the folder where the documents are stored
+    folder: "content/posts/uutinen" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -17,7 +17,7 @@ collections:
       - { label: "Teksti", name: "body", widget: "markdown" }
   - name: "vaihtoehto" # Used in routes, e.g., /admin/collections/blog
     label: "Vaihtoehto" # Used in the UI
-    folder: "_posts/vaihtoehto" # The path to the folder where the documents are stored
+    folder: "content/vaihtoehdot" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
