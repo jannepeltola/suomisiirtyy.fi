@@ -8,5 +8,17 @@
 	    <img src="images/skifter_fi.png" alt="Suomi siirtyy" />
 	</div>
     </div>
+
+    <div class="flex flex-row flex-wrap my-30 gap-10">
+    {{ range where .Site.RegularPages "Section" "etusivu" }}
+	<div class="w-60 align-middle text-center ring-2 ring-taupe-500 rounded-3xl p-5">
+	    <div class="rounded-2xl text-3xl font-bold bg-sky-500 w-10 mx-auto text-white mb-5">
+		{{ .Param "icon" }}
+	    </div>
+	    <h1>{{ .Title }}</h1>
+	    <p>{{ .Content }}</p>
+	</div>
+    {{ end }}
+    </div>
     
 {{ end }}
