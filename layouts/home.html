@@ -9,15 +9,9 @@
 	</div>
     </div>
 
-    <div class="flex flex-row flex-wrap my-30 gap-10">
+    <div class="prose max-w-none md:max-w-4xl mx-auto my-10 px-4 md:px-0">
     {{ range where .Site.RegularPages "Section" "etusivu" }}
-	<div class="w-60 align-middle text-center ring-2 ring-taupe-500 rounded-3xl p-5">
-	    <div class="rounded-2xl text-3xl font-bold bg-sky-500 w-10 mx-auto text-white mb-5">
-		{{ .Param "icon" }}
-	    </div>
-	    <h1>{{ .Title }}</h1>
 	    <p>{{ .Content }}</p>
-	</div>
     {{ end }}
     </div>
     
